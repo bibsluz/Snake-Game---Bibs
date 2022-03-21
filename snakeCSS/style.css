@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+.corpo{
+    background: url("../img/cobrinha.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#pontuacao { 
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(163, 152, 155);
+}
+
+div#board{
+    width: 90vh;
+    height: 90vh;   
+    border-radius: 20px;
+    background: linear-gradient(#acbbc2d5, #acbbc2);
+    border: 4px solid rgb(213, 226, 221) ;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+
+}
+
+div.head{
+    
+    background: linear-gradient(rgb(172, 102, 114), rgb(165, 92, 110));
+    border: 2px solid rgb(207, 134, 156);
+    transform: scale(1.02);
+    border-radius: 50px;
+
+}
+
+div.snake{
+   
+    background: linear-gradient(rgb(76, 119, 99), rgb(131, 178, 192));
+    border: 2px solid rgb(138, 181, 187);
+    border-radius: 50px;
+}
+
+div.fruta{
+    background: url("../img/Blueberry-PNG-Photos.png");
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
